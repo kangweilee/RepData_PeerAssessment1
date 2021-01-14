@@ -115,7 +115,7 @@ Look at data mean
     
 ```{r}
       SumStepNew <- aggregate(steps ~ date, data = newExec, sum, na.rm=TRUE)
-      hist(SumStepNew$steps, main="SumStepNew ", col="purple",xlab="steps")
+      hist(SumStepNew$steps, main="Total Number of Steps Each Day -Imputed ", col="purple",xlab="steps")
       
       mean(SumStepNew$steps)
       median(SumStepNew$steps)
